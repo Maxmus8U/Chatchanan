@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ตัวอย่างองค์ประกอบ HTML</title>
+  <style>
+    body{font-family:system-ui, sans-serif; margin:24px; line-height:1.7; background:#f7f7f7;}
+    .divider{height:2px; background:linear-gradient(to right, transparent, #ccc, transparent); margin:1.5rem 0;}
+    .box{border:1px solid #ddd; border-radius:8px; padding:16px; background:#fff;}
+    @keyframes wiggle {0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+    .wiggle{display:inline-block; animation:wiggle .4s ease-in-out infinite; transform-origin:50% 80%}
+    .card{border:1px solid #e5e7eb; border-radius:12px; padding:16px 18px; box-shadow:0 4px 16px rgba(0,0,0,.06); background:#fff; max-width:560px;}
+    .btn{display:inline-block; padding:.5rem .9rem; border-radius:8px; background:#111; color:#fff; text-decoration:none;}
+    .layout{display:grid; gap:20px; grid-template-columns:1fr 320px; max-width:1100px; margin:0 auto;}
+    .content,.sidebar{background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px;}
+    @media (max-width:800px){.layout{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <h1>สรุปองค์ประกอบ HTML ยอดฮิต</h1>
+
+  <h2>เส้นคั่น</h2>
+  <hr>
+  <div class="divider"></div>
+
+  <h2>mark (ไฮไลต์)</h2>
+  <p>ใช้แท็ก <mark>mark</mark> เพื่อเน้นคำสำคัญ</p>
+
+  <h2>ภาพดุกดิ๊ก</h2>
+  <img class="wiggle" src="image.png" alt="ภาพสั่น" width="120">
+
+  <h2>ย่อหน้า</h2>
+  <p>นี่คือย่อหน้าแรก</p>
+  <p>นี่คือย่อหน้าที่สอง</p>
+
+  <h2>เส้นกรอบ</h2>
+  <div class="box">กรอบเรียบๆ มีมุมโค้ง</div>
+
+  <h2>วีดีโอ</h2>
+  <video controls width="420">
+    <source src="movie.mp4" type="video/mp4">
+    เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+  </video>
+
+  <h2>ลิสต์</h2>
+  <ul>
+    <li>รายการที่ 1</li><li>รายการที่ 2</li>
+  </ul>
+  <ol>
+    <li>ขั้นตอนที่ 1</li><li>ขั้นตอนที่ 2</li>
+  </ol>
+
+  <h2>กรอบคอนเท้น (Card)</h2>
+  <article class="card">
+    <h3>หัวข้อคอนเท้น</h3>
+    <p>เนื้อหาสรุปให้เข้าใจง่าย</p>
+    <a class="btn" href="#">อ่านต่อ</a>
+  </article>
+
+  <h2>โครงร่างการใช้คอนเท้นในหน้า</h2>
+  <main class="layout">
+    <section class="content">
+      <h3>บทความ</h3>
+      <p>ส่วนเนื้อหาหลักของหน้า</p>
+    </section>
+    <aside class="sidebar">
+      <strong>คอนเท้นเสริม</strong>
+      <ul><li>ลิงก์ที่เกี่ยวข้อง</li></ul>
+    </aside>
+  </main>
+
+</body>
+</html>
